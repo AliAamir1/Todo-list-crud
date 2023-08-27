@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
-import db from "./db";
-import todoRoutes from "./routes";
+import db from "./MongoConnection.js";
+import todoRoutes from "./Routes/Todo.js";
 
 const app = express();
 const port = process.env.PORT || 3001;
